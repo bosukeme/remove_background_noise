@@ -31,9 +31,9 @@ class Base:
 
 class CloudinaryUpload:
     def __init__(self):
-        self.cloud_name = os.getenv('cloud_name')
-        self.api_key = os.getenv("api_key")
-        self.api_secret = os.getenv("api_secret")
+        self.cloud_name = os.getenv('CLOUD_NAME')
+        self.api_key = os.getenv("API_KEY")
+        self.api_secret = os.getenv("API_SECRET")
 
         cloudinary.config(
             cloud_name=self.cloud_name,

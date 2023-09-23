@@ -83,9 +83,9 @@ cd remove_background_noice
 Before you start the application, you need to set up an environment variables. Here's how you can do it:
 
 ```bash
-cloud_name=
-api_key=
-api_secret=
+CLOUD_NAME=
+API_KEY=
+API_SECRET=
 ```
 
 Create a file called `.env` file at the root folder of the project with the environmental variables above.

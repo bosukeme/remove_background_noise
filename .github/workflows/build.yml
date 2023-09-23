@@ -37,16 +37,17 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
+    - name: Set up environment variable
+      run: |
+        echo "${{ secrets.TEST_ENV }}" > .env
+
+
     - name: Run Docker Compose and pytest
       env:
         ENV: "testing"
       run: |
         docker-compose up -d
         pytest 
-
-    # - name: Test with pytest
-    #   run: |
-    #     pytest
 
   
   # server:
