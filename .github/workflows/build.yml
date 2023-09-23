@@ -46,7 +46,7 @@ jobs:
       env:
         ENV: "testing"
       run: |
-        docker-compose up -d
+        docker-compose up --build -d
         pytest 
 
   
