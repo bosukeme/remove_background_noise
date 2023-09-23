@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  noise_removal:
+    build: .
+    restart: always
+    volumes:
+      - ".:/background_noise_removal"
+    ports:
+      - "8001:8001"
+    env_file: .env
+
+  
