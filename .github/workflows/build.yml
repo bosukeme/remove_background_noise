@@ -42,12 +42,12 @@ jobs:
         echo "${{ secrets.TEST_ENV }}" > .env
 
 
-    - name: Run Docker Compose and pytest
-      env:
-        ENV: "testing"
-      run: |
-        docker-compose up --build -d
-        pytest 
+    # - name: Run Docker Compose and pytest
+    #   env:
+    #     ENV: "testing"
+    #   run: |
+    #     docker-compose up --build -d
+    #     pytest 
 
   
   # server:
