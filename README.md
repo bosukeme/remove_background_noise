@@ -1,7 +1,7 @@
 # remove_background_noise
 
 ## Table of Contents
-h
+
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
